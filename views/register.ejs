@@ -1,0 +1,26 @@
+<%- include('./partials/header.ejs') %>
+  <div
+    class="w-full h-screen bg-[url('https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D')] bg-cover bg-no-repeat bg-center flex items-center justify-end ">
+
+    <div class="mr-[10vh]" >
+      <div class="w-full max-w-sm p-8 border border-gray-200 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-bold text-center text-white mb-6">Create Pinterest Account</h2>
+      <form action="/register" method="POST" class="space-y-4">
+         <input type="text" placeholder="Fullname" name="fullname" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-400">
+        <input type="text" placeholder="Username" name="username" required
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-400">
+        <input type="email" placeholder="Email" name="email" required
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-400">
+        <input type="password" placeholder="Password" name="password" required
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-400">
+        <button type="submit" class="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition">Sign
+          Up</button>
+      </form>
+      <p class="text-center mt-4 text-sm font-semibold">Already have an account?
+        <a href="/" class="text-red-600 hover:underline">Log In</a>
+      </p>
+    </div>
+  </div>
+  </div>
+
+<%- include('./partials/footer.ejs') %>
